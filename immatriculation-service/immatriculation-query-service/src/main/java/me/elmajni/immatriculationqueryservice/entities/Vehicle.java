@@ -3,7 +3,7 @@ package me.elmajni.immatriculationqueryservice.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.coreapi.VehicleType;
+import me.elmajni.commonapi.VehicleType;
 
 import javax.persistence.*;
 import java.util.List;

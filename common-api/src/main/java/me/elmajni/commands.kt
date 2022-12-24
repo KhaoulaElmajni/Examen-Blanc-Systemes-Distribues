@@ -45,3 +45,8 @@ data class UpdateVehicleOwnerCommand(
     override val id : String,
     val payload : UpdateVehicleOwnerRequestDTO,
 ) : BaseCommand<String>(id);
+
+data class CreateOwnerCommand(
+    override val id : String,
+    val payload : OwnerRequestDTO,
+) : BaseCommand<String>(id);

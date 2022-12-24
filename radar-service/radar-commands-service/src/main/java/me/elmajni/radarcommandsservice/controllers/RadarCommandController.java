@@ -1,7 +1,7 @@
 package me.elmajni.radarcommandsservice.controllers;
 
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.*;
+import me.elmajni.commonapi.*;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.eventsourcing.eventstore.EventStore;
 import org.springframework.web.bind.annotation.*;

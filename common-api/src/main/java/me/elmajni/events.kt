@@ -42,3 +42,8 @@ data class VehicleOwnerUpdatedEvent(
     val payload:UpdateVehicleOwnerRequestDTO
 ):BaseCommand<String>(id);
 
+data class OwnerCreatedEvent(
+    override val id : String,
+    val payload:OwnerRequestDTO
+):BaseCommand<String>(id);
+

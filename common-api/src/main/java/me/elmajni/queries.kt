@@ -17,11 +17,16 @@ class GetAllOverSpeedsByRegistrationNumberQuery(
 
 
 class GetAllVehiclesQuery();
+class GetOwner( val registrationNumber : String,);
 class GetAllOwners();
+
 class GetVehicleByRegistrationNumber(
     val registrationNumber : String,
 );
 
+class GetVehicleByOwner(
+    val ownerId : String,
+);
 class GetAllContraventions(
     val page : Int,
     val size : Int

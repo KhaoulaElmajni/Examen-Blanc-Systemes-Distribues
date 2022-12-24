@@ -92,6 +92,14 @@ data class VehicleRequestDTO(
     val ownerAddress : String
 );
 
+data class OwnerRequestDTO(
+    val name : String,
+    val nationalIdCard : String,
+    val email : String,
+    val phoneNumber : String,
+    val address : String
+);
+
 data class UpdateVehicleOwnerRequestDTO(
     val registrationNumber : String,
     val ownerName : String,

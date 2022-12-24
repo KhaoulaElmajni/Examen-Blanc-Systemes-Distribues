@@ -1,6 +1,7 @@
 package me.elmajni.radarcommandsservice.aggregates;
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.*;
+
+import me.elmajni.commonapi.*;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;
