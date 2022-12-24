@@ -1,4 +1,4 @@
-package ma.enset.coreapi
+package me.elmajni.commonapi
 
 class GetAllRadarsQuery();
 data class GetRadarById(
@@ -13,9 +13,8 @@ class GetAllOverSpeedsByRegistrationNumberQuery(
     val registrationNumber : String,
 );
 
-//======================================//
-//========= IMatriculation Center ===== //
-//======================================//
+//**********************IMMATRICULATION********************************//
+
 
 class GetAllVehiclesQuery();
 class GetAllOwners();

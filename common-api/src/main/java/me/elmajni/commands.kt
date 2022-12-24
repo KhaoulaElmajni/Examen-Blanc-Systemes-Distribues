@@ -1,10 +1,9 @@
-package ma.enset.coreapi
+package me.elmajni.commonapi
 
 import org.axonframework.modelling.command.TargetAggregateIdentifier
 
-//======================================//
-//========= Radar Service============= //
-//======================================//
+//**********************RADAR********************************//
+
 
 abstract class BaseCommand<T>(
     @TargetAggregateIdentifier open val id : T
@@ -35,9 +34,7 @@ data class NewContraventionCommand(
 ) : BaseCommand<String>(id);
 
 
-//======================================//
-//========= IMatriculation Center ===== //
-//======================================//
+//**********************IMMATRICULATION********************************//
 
 data class CreateVehicleCommand(
     override val id : String,

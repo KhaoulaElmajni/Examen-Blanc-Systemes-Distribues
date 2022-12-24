@@ -1,4 +1,4 @@
-package ma.enset.coreapi
+package me.elmajni.commonapi
 
 import java.time.Instant
 

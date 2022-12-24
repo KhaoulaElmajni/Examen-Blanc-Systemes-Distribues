@@ -1,4 +1,5 @@
-package ma.enset.coreapi
+package me.elmajni.commonapi
+
 
 enum class RadarStatus {
     ACTIVE, OUT_OF_ORDER, OFF

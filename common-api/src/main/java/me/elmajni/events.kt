@@ -1,4 +1,4 @@
-package ma.enset.coreapi
+package me.elmajni.commonapi
 
 abstract class BaseEvent<T> (
     open val id: T
@@ -29,9 +29,8 @@ data class ContraventionCreatedEvent(
     val payload : ContraventionData,
 ) : BaseEvent<String>(id);
 
-//======================================//
-//========= IMatriculation Center ===== //
-//======================================//
+//**********************IMMATRICULATION********************************//
+
 
 data class VehicleCreatedEvent(
     override val id : String,
