@@ -33,11 +33,50 @@ services:
     networks:
       - default-network
 
+  infraction-command-service:
+    build: ./infraction-command-service/
+    hostname: infraction-command-service
+    ports:
+      - "8090:8090"
+    restart: on-failure
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
   infraction-query-service:
     build: ./infraction-query-service/
     hostname: infraction-query-service
     ports:
-      - "8082:8082"
+      - "8091:8091"
+    restart: on-failure
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
+  radar-command-service:
+    build: ./radar-command-service/
+    hostname: radar-command-service
+    ports:
+      - "8181:8181"
+    restart: on-failure
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
+  radar-query-service:
+    build: ./radar-query-service/
+    hostname: radar-query-service
+    ports:
+      - "8883:8883"
     restart: on-failure
     depends_on:
       - eureka-service
@@ -52,9 +91,13 @@ services:
     ports:
       - "9999:9999"
     depends_on:
+      - eureka-service
       - immatriculation-query-service
       - immatriculation-command-service
-      - eureka-service
+      - infraction-command-service
+      - infraction-query-service
+      - radar-command-service
+      - radar-query-service
     environment:
       - eureka.client.service-url.defaultZone=http://discovery-service:8761/eureka
     networks:
