@@ -2,9 +2,8 @@ package me.elmajni.infractioncommandsservice.services;
 
 import lombok.extern.slf4j.Slf4j;
 
-import ma.enset.coreapi.NewContraventionCommand;
-import ma.enset.coreapi.VehicleCreatedEvent;
-import ma.enset.coreapi.VehicleOverSpeedDetectedEvent;
+
+import me.elmajni.commonapi.*;
 import me.elmajni.infractioncommandsservice.model.Vehicle;
 import me.elmajni.infractioncommandsservice.model.VehicleOwner;
 import me.elmajni.infractioncommandsservice.repositories.VehicleOwnerRepository;

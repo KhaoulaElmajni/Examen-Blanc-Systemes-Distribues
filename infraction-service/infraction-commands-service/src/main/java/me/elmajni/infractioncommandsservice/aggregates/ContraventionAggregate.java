@@ -1,11 +1,9 @@
 package me.elmajni.infractioncommandsservice.aggregates;
 
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.ContraventionCreatedEvent;
-import ma.enset.coreapi.ContraventionData;
-import ma.enset.coreapi.ContraventionStatus;
-import ma.enset.coreapi.NewContraventionCommand;
+
 import me.elmajni.*;
+import me.elmajni.commonapi.*;
 import me.elmajni.infractioncommandsservice.model.Vehicle;
 import me.elmajni.infractioncommandsservice.repositories.VehicleOwnerRepository;
 import me.elmajni.infractioncommandsservice.repositories.VehicleRepository;
