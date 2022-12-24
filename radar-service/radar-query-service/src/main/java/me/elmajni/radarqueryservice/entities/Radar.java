@@ -3,7 +3,7 @@ package me.elmajni.radarqueryservice.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.coreapi.RadarStatus;
+import me.elmajni.commonapi.RadarStatus;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

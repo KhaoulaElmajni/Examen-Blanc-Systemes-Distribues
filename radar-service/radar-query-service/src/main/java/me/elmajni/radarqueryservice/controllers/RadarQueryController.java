@@ -1,6 +1,6 @@
 package me.elmajni.radarqueryservice.controllers;
 
-import ma.enset.coreapi.*;
+import me.elmajni.commonapi.*;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.axonframework.queryhandling.SubscriptionQueryResult;

@@ -3,8 +3,8 @@ package me.elmajni.infractionqueryservice.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ma.enset.coreapi.ContraventionStatus;
-import ma.enset.coreapi.VehicleType;
+import me.elmajni.commonapi.*;
+
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;

@@ -1,7 +1,7 @@
 package me.elmajni.radarqueryservice.services;
 
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.*;
+import me.elmajni.commonapi.*;
 import me.elmajni.radarqueryservice.entities.OverSpeedDetection;
 import me.elmajni.radarqueryservice.entities.Radar;
 import me.elmajni.radarqueryservice.mappers.RadarMappers;

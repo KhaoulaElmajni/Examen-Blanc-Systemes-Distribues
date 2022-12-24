@@ -1,6 +1,6 @@
 package me.elmajni.radarqueryservice.mappers;
 
-import ma.enset.coreapi.*;
+import me.elmajni.commonapi.*;
 import me.elmajni.radarqueryservice.entities.OverSpeedDetection;
 import me.elmajni.radarqueryservice.entities.Radar;
 import org.mapstruct.Mapper;

@@ -1,6 +1,6 @@
 package me.elmajni.infractionqueryservice.controller;
 
-import ma.enset.coreapi.GetContraventionsByNationalCardNumber;
+import me.elmajni.commonapi.GetContraventionsByNationalCardNumber;
 import org.axonframework.messaging.responsetypes.ResponseTypes;
 import org.axonframework.queryhandling.QueryGateway;
 import org.springframework.data.domain.Page;

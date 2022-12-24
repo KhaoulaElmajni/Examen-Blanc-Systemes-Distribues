@@ -1,6 +1,6 @@
 package me.elmajni.infractionqueryservice.services;
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.ContraventionCreatedEvent;
+import me.elmajni.commonapi.ContraventionCreatedEvent;
 import me.elmajni.infractionqueryservice.entities.Contravention;
 import me.elmajni.infractionqueryservice.repositories.ContraventionRepository;
 import org.axonframework.eventhandling.EventHandler;

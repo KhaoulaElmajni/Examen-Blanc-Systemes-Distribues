@@ -1,7 +1,7 @@
 package me.elmajni.infractionqueryservice.services;
 
 import lombok.extern.slf4j.Slf4j;
-import ma.enset.coreapi.GetContraventionsByNationalCardNumber;
+import me.elmajni.commonapi.GetContraventionsByNationalCardNumber;
 import me.elmajni.infractionqueryservice.repositories.ContraventionRepository;
 import org.axonframework.queryhandling.QueryHandler;
 import org.springframework.data.domain.Page;

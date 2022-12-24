@@ -100,6 +100,7 @@ data class OwnerRequestDTO(
     val address : String
 );
 
+
 data class UpdateVehicleOwnerRequestDTO(
     val registrationNumber : String,
     val ownerName : String,
