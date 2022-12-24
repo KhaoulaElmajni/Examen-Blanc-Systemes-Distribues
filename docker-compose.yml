@@ -1,0 +1,65 @@
+version: '3'
+services:
+  eureka-service:
+    build: ./discovery-service/
+    hostname: discovery-service
+    ports:
+      - "8761:8761"
+    networks:
+      - default-network
+
+  immatriculation-commands-service:
+    build: ./immatriculation-commands-service/
+    hostname: immatriculation-commands-service
+    ports:
+      - "8081:8081"
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
+  immatriculation-query-service:
+    build: ./immatriculation-query-service/
+    hostname: immatriculation-query-service
+    ports:
+      - "8082:8082"
+    restart: on-failure
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
+  infraction-query-service:
+    build: ./infraction-query-service/
+    hostname: infraction-query-service
+    ports:
+      - "8082:8082"
+    restart: on-failure
+    depends_on:
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761
+    networks:
+      - default-network
+
+  gateway-service:
+    build: ./gateway-service/
+    hostname: gateway-service
+    ports:
+      - "9999:9999"
+    depends_on:
+      - immatriculation-query-service
+      - immatriculation-command-service
+      - eureka-service
+    environment:
+      - eureka.client.service-url.defaultZone=http://discovery-service:8761/eureka
+    networks:
+      - default-network
+
+networks:
+  default-network:
+    driver: bridge
