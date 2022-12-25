@@ -345,27 +345,46 @@ La documentation swagger du « infraction-query-service » :
   
 
 
+![](https://i.imgur.com/8IX1Pux.png)
 
 
 	
 la documentation swagger du « immatriculation-command-service » :
  
+![](https://i.imgur.com/U4FIGIY.png)
 
-La documentation swagger du « immatriculation-query-service » :
+
+La documentation swagger du « immatriculation-query-service » : 
+
+![](https://i.imgur.com/U0hVvnF.png)
+
+ 
+La liste des dépassements de vitesse : 
+	
+![](https://i.imgur.com/SPApCoO.png)
+
  
 La liste des dépassements de vitesse :
- 
-La liste des dépassements de vitesse :
 
+![](https://i.imgur.com/40QD1rU.png)
  
 La liste des radars :
  
+![](https://i.imgur.com/Zn51eXw.png)
+
 La liste des événements dans AXON:
  
+![](https://i.imgur.com/Y1plicw.png)
+
 Les détails d’un événement :
  
+![](https://i.imgur.com/feAOxCg.png)
+
 Les commandes
  
+![](https://i.imgur.com/suKCU8B.png)
+
 La listes des queries des micro-services :
  
-![Uploading file..._ptyb21te8]()
+![](https://i.imgur.com/elKH4tq.png)
+
