@@ -157,23 +157,44 @@ Création d’un realm :
  
 Création d’un client :
  
- 
+ ![](https://i.imgur.com/XvUt97u.png)
+
+	![](https://i.imgur.com/npiEdNh.png)
 
 Création des utilisateurs :
  
- 
- 
- 
- 
+ ![](https://i.imgur.com/yAUBzUa.png)
+
+ ![](https://i.imgur.com/mg00Zcr.png)
+
+ ![](https://i.imgur.com/Fpp3Gqt.png)
+	
+![](https://i.imgur.com/F3PSjzx.png)
+
+ ![](https://i.imgur.com/f91M5nf.png)
+
+	
 Création des roles :
  
- 
+	![](https://i.imgur.com/RsTzDFK.png)
+	
+	![](https://i.imgur.com/gXefD7g.png)
+
+	![](https://i.imgur.com/1iATwFK.png)
+
  
 Assignation des roles aux utilisateurs :
  
- 
- 
+ ![](https://i.imgur.com/2ICDr4B.png)
+
+ ![](https://i.imgur.com/UjyKUeO.png)
+
+	![](https://i.imgur.com/h6F2aDl.png)
+
+	
 Ajouter les dépendances suivantes dans les 6 micro services:
+
+```java!
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-security</artifactId>
@@ -184,11 +205,15 @@ Ajouter les dépendances suivantes dans les 6 micro services:
     <artifactId>keycloak-spring-boot-starter</artifactId>
     <version>20.0.1</version>
 </dependency>
+```
 
 Après, la partie de sécurité dans chaque micro-service :
- 
+ ![](https://i.imgur.com/7vPMyvs.png)
+
 La partie front « Authentification pour accéder » :
- 
+
+	![](https://i.imgur.com/f3ogtqG.png)
+
 
 9.	Ecrire un script docker-compose.yml pour le déploiement de ce système distribué dans des conteneurs docker.
 Le script docker-compose :
@@ -305,7 +330,7 @@ networks:
 
 ```
 
-la documentation swagger du « radar-command-service » :
+la documentation swagger du « radar-command-service » : 
  
 la documentation swagger du « infraction-command-service » :
 
