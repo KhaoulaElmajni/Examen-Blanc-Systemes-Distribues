@@ -35,111 +35,111 @@ Architecture CQRS :
 
 Le service « radar-commands-service » :
 
-	![](https://i.imgur.com/lNGGOzz.png)
+![](https://i.imgur.com/lNGGOzz.png)
 
 Les détails du micro service dans AXON : 
 	
-	![](https://i.imgur.com/i7D6YtR.png)
+![](https://i.imgur.com/i7D6YtR.png)
 
  
 Le service « radar-query-service » : 
 	
-	![](https://i.imgur.com/Kt4GNEI.png)
+![](https://i.imgur.com/Kt4GNEI.png)
 
  
 Les détails du micro service dans AXON : 
 	
-	![](https://i.imgur.com/J4Ixnvd.png)
+![](https://i.imgur.com/J4Ixnvd.png)
 
  
 Lancement de Axon dans Docker compose :  
 	
-	![](https://i.imgur.com/DMMfQYo.png)
+![](https://i.imgur.com/DMMfQYo.png)
 
  
 Axon dashboard : 
  
-	![](https://i.imgur.com/TiRWe05.png)
+![](https://i.imgur.com/TiRWe05.png)
 
- ![](https://i.imgur.com/Uo6OxFN.png)
+![](https://i.imgur.com/Uo6OxFN.png)
 
- ![](https://i.imgur.com/KOin9om.png)
+![](https://i.imgur.com/KOin9om.png)
 
-	![](https://i.imgur.com/74BEnvo.png)
+![](https://i.imgur.com/74BEnvo.png)
 	
  
 4.	Développer le micro-service Immatriculation
 	
-	![](https://i.imgur.com/EzTCq0d.png)
+![](https://i.imgur.com/EzTCq0d.png)
 
  
 Le service « Immatriculation-commands-service » :
  
-	![](https://i.imgur.com/NlqFeMo.png)
+![](https://i.imgur.com/NlqFeMo.png)
 
 	
 Les détails du micro service dans AXON :
  
-	![](https://i.imgur.com/5zyHxcT.png)
+![](https://i.imgur.com/5zyHxcT.png)
 
 
 Le service « Immatriculation-query-service » :
  
-	![](https://i.imgur.com/QPdWRRw.png)
+![](https://i.imgur.com/QPdWRRw.png)
 
 	
 Les détails du micro service dans AXON :
  
-	![](https://i.imgur.com/bkkxC2A.png)
+![](https://i.imgur.com/bkkxC2A.png)
 
 
 5.	Développer le micro-service Infractions 
 	
-	![](https://i.imgur.com/L2rTirz.png)
+![](https://i.imgur.com/L2rTirz.png)
 
  
 Le service « Infractions-commands-service » : 
 	
-	![](https://i.imgur.com/wKe3TPM.png)
+![](https://i.imgur.com/wKe3TPM.png)
 
  
 Les détails du micro service dans AXON : 
 	
-	![](https://i.imgur.com/HvHCeoD.png)
+![](https://i.imgur.com/HvHCeoD.png)
 
  
 Le service « Infractions -query-service » : 
-	![](https://i.imgur.com/mSJspB8.png)
+![](https://i.imgur.com/mSJspB8.png)
  
 Les détails du micro service dans AXON : 
 	
- ![](https://i.imgur.com/egaTM99.png)
+![](https://i.imgur.com/egaTM99.png)
 
 
 6.	Mettre en place les services techniques de l’architecture micro-service (Gateway, Eureka Discovery service) 
 Le service « Eureka-discovery-service » :
  
-	![](https://i.imgur.com/vZ8D8Pb.png)
+![](https://i.imgur.com/vZ8D8Pb.png)
 
 
 Le service « Gateway-service » :
  
-	![](https://i.imgur.com/JY6M7xp.png)
+![](https://i.imgur.com/JY6M7xp.png)
 
 
 7.	Développer votre application Frontend avec Angular ou React 
  
-	![](https://i.imgur.com/kWJ8d3z.png)
+![](https://i.imgur.com/kWJ8d3z.png)
 
 	
 Les composants :
  
-	![](https://i.imgur.com/dzPLgOn.png)
+![](https://i.imgur.com/dzPLgOn.png)
 
 	
 La listes des radars :
  
-	![](https://i.imgur.com/CsoaXIY.png)
+![](https://i.imgur.com/CsoaXIY.png)
 
 
 Les événements passés sur un radar :
@@ -149,21 +149,21 @@ Les événements passés sur un radar :
 
 8.	Sécuriser votre système avec un système de d’authentification OAuth2 comme Keycloak 
 	
- ![](https://i.imgur.com/JPdymwV.png)
+![](https://i.imgur.com/JPdymwV.png)
 
 Création d’un realm : 
 	
-	![](https://i.imgur.com/K7r4Bi3.png)
+![](https://i.imgur.com/K7r4Bi3.png)
  
 Création d’un client :
  
- ![](https://i.imgur.com/XvUt97u.png)
+![](https://i.imgur.com/XvUt97u.png)
 
-	![](https://i.imgur.com/npiEdNh.png)
+![](https://i.imgur.com/npiEdNh.png)
 
 Création des utilisateurs :
  
- ![](https://i.imgur.com/yAUBzUa.png)
+![](https://i.imgur.com/yAUBzUa.png)
 
  ![](https://i.imgur.com/mg00Zcr.png)
 
@@ -176,11 +176,11 @@ Création des utilisateurs :
 	
 Création des roles :
  
-	![](https://i.imgur.com/RsTzDFK.png)
+![](https://i.imgur.com/RsTzDFK.png)
 	
-	![](https://i.imgur.com/gXefD7g.png)
+![](https://i.imgur.com/gXefD7g.png)
 
-	![](https://i.imgur.com/1iATwFK.png)
+![](https://i.imgur.com/1iATwFK.png)
 
  
 Assignation des roles aux utilisateurs :
@@ -212,7 +212,7 @@ Après, la partie de sécurité dans chaque micro-service :
 
 La partie front « Authentification pour accéder » :
 
-	![](https://i.imgur.com/f3ogtqG.png)
+![](https://i.imgur.com/f3ogtqG.png)
 
 
 9.	Ecrire un script docker-compose.yml pour le déploiement de ce système distribué dans des conteneurs docker.
@@ -332,7 +332,7 @@ networks:
 
 la documentation swagger du « radar-command-service » : 
  
-	![](https://i.imgur.com/arkb3Fo.png)
+![](https://i.imgur.com/arkb3Fo.png)
 
 	
 la documentation swagger du « infraction-command-service » : 
@@ -340,30 +340,26 @@ la documentation swagger du « infraction-command-service » :
 ![](https://i.imgur.com/Rfr6KlC.png)
 
  
+ 
 La documentation swagger du « infraction-query-service » :
- 
+  
+
+
+
 
 	
-
 la documentation swagger du « immatriculation-command-service » :
-
-
-
-	
-
-La liste des dépassements de vitesse :
  
 
-
-
+La documentation swagger du « immatriculation-query-service » :
+ 
+La liste des dépassements de vitesse :
+ 
 La liste des dépassements de vitesse :
 
-	
  
 La liste des radars :
  
-	
-
 La liste des événements dans AXON:
  
 Les détails d’un événement :
@@ -372,3 +368,4 @@ Les commandes
  
 La listes des queries des micro-services :
  
+![Uploading file..._ptyb21te8]()
