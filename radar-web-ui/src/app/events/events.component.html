@@ -1,0 +1,20 @@
+<div class="container">
+  <table class="table" *ngIf="events">
+    <thead>
+    <tr>
+      <th>Type</th><th>Date</th><th>Identifier</th><th>PayloadType</th><th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let event of events">
+      <td>{{event.type}}</td>
+      <td>{{event.timestamp|date:'dd/MM/yyyy'}}</td>
+      <td>{{event.aggregateIdentifier}}</td>
+      <td>{{event.payloadType}}</td>
+      <td>
+        <button class="btn btn-success" (click)="getEventDetails(event)">Event Details</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

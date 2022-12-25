@@ -1,0 +1,28 @@
+<div class="container mt-4">
+  <table class="table table-bordered">
+    <tr>
+      <th>RadarId</th>
+      <th>Name</th>
+      <th>Longitude</th>
+      <th>Latitude</th>
+      <th>Max Speed</th>
+      <th>Road</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+    <tr *ngFor="let radar of radars">
+      <td>{{radar.radarId}}</td>
+      <td>{{radar.name}}</td>
+      <td>{{radar.longitude}}</td>
+      <td>{{radar.latitude}}</td>
+      <td>{{radar.maxSpeed}}</td>
+      <td>{{radar.roadDesignation}}</td>
+      <td>{{radar.radarStatus}}</td>
+      <td>
+        <button class="btn btn-primary m-2" (click)="editRadar(radar.radarId)">Edit</button>
+        <button class="btn btn-danger m-2" (click)="deleteRadar(radar.radarId)">Delete</button>
+        <button class="btn btn-success m-2" (click)="getEventStore(radar.radarId)">Events</button>
+      </td>
+    </tr>
+  </table>
+</div>
